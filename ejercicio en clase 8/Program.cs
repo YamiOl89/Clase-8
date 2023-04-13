@@ -1,25 +1,28 @@
-﻿void arreglos()
+void arreglos()
 {
     String[] nombre = new string[]
-    {
- "Fernanda", "Melvin", "Luis", "Brandon", "Yamileth"
-    };
+{
+    "Fernanda", "Melvin", "Luis", "Brandon", "Yamileth"
+};
 
     int[] notas = new int[]
     {
     70,90,43,85,30
     };
+
     int notaMasAlta = notas[0];
-    foreach (int nota in notas)
+    int indiceNotaMasAlta = 0;
+
+    for (int i = 0; i < notas.Length; i++)
     {
-        if (nota > notaMasAlta)
+        if (notas[i] > notaMasAlta)
         {
-            notaMasAlta = nota;
+            notaMasAlta = notas[i];
+            indiceNotaMasAlta = i;
         }
     }
-    Console.WriteLine("La nota más alta es: "  + notaMasAlta);
+    Console.WriteLine($"La nota más alta es {notaMasAlta} y es del alumno {nombre[indiceNotaMasAlta]}");
 };
-
 arreglos();
 
 
