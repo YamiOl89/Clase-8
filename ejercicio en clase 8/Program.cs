@@ -10,20 +10,19 @@ void arreglos()
     70,90,43,85,30
     };
 
-    int notaMasAlta = notas[0];
-    int indiceNotaMasAlta = 0;
+    int notaAlta = notas[0];
+    int indNotaMasAlta = 0;
 
     for (int i = 0; i < notas.Length; i++)
     {
-        if (notas[i] > notaMasAlta)
+        if (notas[i] > notaAlta)
         {
-            notaMasAlta = notas[i];
-            indiceNotaMasAlta = i;
+            notaAlta = notas[i];
+            indiNotaMasAlta = i;
         }
     }
-    Console.WriteLine($"La nota más alta es {notaMasAlta} y es del alumno {nombre[indiceNotaMasAlta]}");
+    Console.WriteLine($"La nota mas alta es:  {notaMasAlta}  del alumno {nombre[indiceNotaMasAlta]}");
 };
 arreglos();
-
 
 
